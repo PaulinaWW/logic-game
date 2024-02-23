@@ -97,3 +97,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+draw(ctx) {
+    ctx.beginPath();
+    ctx.moveTo(this.x, this.y);
+    ctx.lineTo(this.x + 10, this.y + 30); // Example spaceship shape
+    ctx.lineTo(this.x - 10, this.y + 30);
+    ctx.fillStyle = '#fff';
+    ctx.fill();
+}
+
+
