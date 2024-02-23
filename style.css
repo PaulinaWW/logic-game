@@ -10,3 +10,53 @@ body {
   border: 1px solid #fff; /* Visible border for the canvas */
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+#gameContainer {
+    position: relative;
+    width: 800px;
+    height: 600px;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#scoreDisplay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Add animations and transitions as needed */
+
