@@ -106,4 +106,19 @@ draw(ctx) {
     ctx.fill();
 }
 
+document.getElementById('startButton').addEventListener('click', () => {
+    document.getElementById('startScreen').style.display = 'none';
+    game.start();
+});
+
+document.getElementById('restartButton').addEventListener('click', () => {
+    document.getElementById('gameOverScreen').style.display = 'none';
+    game.start(); // Reset the game state and start again
+});
+
+function updateScoreDisplay(score) {
+    document.getElementById('score').textContent = score;
+}
+
+
 
