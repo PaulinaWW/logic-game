@@ -1,4 +1,4 @@
-// Class for the spaceship
+// Class for the spaceship 
 class Spaceship {
     constructor(x, y) {
         this.x = x;
