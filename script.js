@@ -25,20 +25,18 @@ document.querySelector('.btn--roll').addEventListener('click', function(){
     
     if(playing){
 
-    //creating random vaue for dice
+    //1.Random Number
     var dice = Math.floor(Math.random()*6)+1;
 
-    //displaying dice result
+    //2. Display the results
     var diceDOM = document.querySelector('.dice');
     diceDOM.style.display = 'block';
     diceDOM.src= 'dice-' + dice + '.png';
     //document.querySelector('.dice').style.display = 'block';
     
 
-    // Update round score if rolled two 6 in a row
-    if ((dice1 === 6 && diceP1 === 6) || (dice2 === 6 && diceP2 === 6)) {
-      scores[activePlayer] = 0;
-
+    //3. Update the round score if the rolled number was not a 1
+    if(dice!== 1){
         //Add Score
         roundScore+=dice;
         document.querySelector('#current--' + activePlayer).textContent = roundScore;
