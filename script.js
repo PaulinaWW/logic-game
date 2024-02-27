@@ -120,7 +120,7 @@ document.querySelector('.player--1').classList.remove('player--active');
 document.querySelector('.player--0').classList.add('player--active');
 
 
-// Ensure that the first player is set as active
+// the first player is set as active
 document.querySelector('.player--0').classList.add('player--active')
 
 
