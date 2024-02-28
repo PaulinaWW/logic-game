@@ -1,6 +1,5 @@
 /*
-GAME RULES:
-
+RULES:
 
 
 
