@@ -1,3 +1,4 @@
+
 var scores, roundScore, activePlayer, playing;
 init();
 
@@ -12,7 +13,16 @@ init();
 
 
 document.querySelector('.btn--roll').addEventListener('click', function(){
-    
+    // Random Number
+      var dice = Math.floor(Math.random()*6)+0;
+
+    // Display the results
+      var diceDOM = document.querySelector('.dice');
+      diceDOM.style.display = 'block';
+      diceDOM.src= 'dice-' + dice + '.png';
+    //document.querySelector('.dice').style.display = 'block';      
+
+  
     if(playing){
 
     // Random Number
@@ -118,4 +128,5 @@ document.querySelector('.player--0').classList.add('player--active')
 
 
 }
+
 
