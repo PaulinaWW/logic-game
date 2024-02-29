@@ -1,4 +1,3 @@
-
 var scores, roundScore, activePlayer, playing;
 init();
 
@@ -52,7 +51,7 @@ document.querySelector('.btn--hold').addEventListener('click',function(){
     document.querySelector('#score--' + activePlayer).textContent = scores[activePlayer];
 
     //Check if the player won the game
-    if(scores[activePlayer]>=20){
+    if(scores[activePlayer]>=50){
         document.querySelector('#name--' + activePlayer).textContent = 'Winner!';
         document.querySelector('.dice').style.display = 'none';
         document.querySelector('.player--' + activePlayer).classList.add('player--winner');
@@ -119,3 +118,4 @@ document.querySelector('.player--0').classList.add('player--active')
 
 
 }
+
