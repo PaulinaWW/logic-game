@@ -1,9 +1,3 @@
-/*
-RULES:
-
-
-
-*/
 
 var scores, roundScore, activePlayer, playing;
 init();
@@ -22,17 +16,17 @@ document.querySelector('.btn--roll').addEventListener('click', function(){
     
     if(playing){
 
-    //1.Random Number
+    // Random Number
     var dice = Math.floor(Math.random()*6)+1;
 
-    //2. Display the results
+    // Display the results
     var diceDOM = document.querySelector('.dice');
     diceDOM.style.display = 'block';
     diceDOM.src= 'dice-' + dice + '.png';
     //document.querySelector('.dice').style.display = 'block';
     
 
-    //3. Update the round score if the rolled number was not a 1
+    // Update the round score if the rolled number was not a 1
     if(dice!== 1){
         //Add Score
         roundScore+=dice;
@@ -107,7 +101,7 @@ document.getElementById('current--0').textContent = '0';
 document.getElementById('current--1').textContent = '0';
 document.querySelector('#name--0').textContent = 'Player 1';
 document.querySelector('#name--1').textContent = 'Player 2';
-document.querySelector('#name--1').textContent = 'Player 3';
+document.querySelector('#name--1').textContent = 'Player 2';
 
 //document.querySelectorAll('.player').forEach(function(player) {
  //   player.classList.remove('player--winner', 'player--active');
